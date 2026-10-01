@@ -6,10 +6,10 @@ print("\n---- Thank You For Playing This Game ----\n")
 while True:
     print("Chose 1 : Play\nChose 2 : Exit")
     val = int(input())
-    if val == 1:
+    if val == 2:
         exit()
     if val > 2:
-        print("Enter Valid Data")
+        print("Enter Valid Input")
         exit()
     print("Enter how many chances you want :-")
     choise = int(input())
