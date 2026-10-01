@@ -12,5 +12,9 @@ for i in range(choise):
     count +=1
     if my_input == choise :
         print(f"You Won \n Total Chances You Take {count}")
-    elif():
-        print("Try again")
+    elif(my_input < x):
+        print("Your Input Is Less Than Value")
+    elif(my_input > x):
+        print("Your Input Is Greater Than Value")
+    else:
+        print("Try Agaiin")
