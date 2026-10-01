@@ -10,7 +10,7 @@ count = 0
 for i in range(choise):
     my_input = int(input("Your Input :- "))
     count +=1
-    if my_input == choise :
+    if my_input == x :
         print(f"You Won \n Total Chances You Take {count}")
     elif(my_input < x):
         print("Your Input Is Less Than Value")
