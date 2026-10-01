@@ -18,3 +18,4 @@ for i in range(choise):
         print("Your Input Is Greater Than Value")
     else:
         print("Try Agaiin")
+print(f"Real Value Is {x}")
