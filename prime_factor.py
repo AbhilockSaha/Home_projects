@@ -1,10 +1,17 @@
 def factor(n):
-    n = n/2
     x = []
-    if n%2 == 1:
-        x.append(n)
 
-    print(x)
+    for i in range(2,n+1):
 
-x=12
-factor(x)
+        while n%i == 0 and n > 0:
+            x.append(i)
+
+            n = n//i
+
+    return x
+
+if __name__ == "__main__":    
+    n = 600851475143
+    ans = factor(n)
+    for x in ans:
+        print(x, end=' ')
