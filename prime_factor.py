@@ -1,17 +1,14 @@
-def factor(n):
-    x = []
+def largest_prime_factor(n):
+    factor = 2
 
-    for i in range(2,n+1):
+    while factor * factor <= n:
+        while n % factor == 0:
+            n //= factor
 
-        while n%i == 0 and n > 0:
-            x.append(i)
+        factor += 1
 
-            n = n//i
+    return n
 
-    return x
 
-if __name__ == "__main__":    
-    n = 600851475143
-    ans = factor(n)
-    for x in ans:
-        print(x, end=' ')
+n = 600851475143
+print(largest_prime_factor(n))
